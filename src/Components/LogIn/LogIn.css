@@ -1,0 +1,51 @@
+.home__regDiv{
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+   
+}
+.home__reg{
+    font-size: 2rem;
+    font-family: 'Poppins' , sans-serif;
+     position: absolute; 
+     
+     /* margin-top: 2rem; */
+    /*left: 40%;
+    top: 16%; */
+    animation: 1s ease-in-out 0s  Slideup;
+  
+    
+    /* transform: translate(-50%, -50%); */
+    color: white;
+
+}
+.home__reg-login{
+    border-bottom: 1px solid;
+    padding-bottom: 0.8rem;
+    margin-left: 1rem;
+    cursor: pointer;
+   
+}
+ .home__reg-login:after{
+    content: "\2192";
+  font-size: 2.6rem;
+    position: absolute;
+    opacity: 0;  
+    top: 0rem;
+    right: 0px;
+    transition: 0.5s; 
+}
+
+ .home__reg-login:hover:after{
+    
+        opacity: 1;
+        right: -4rem;
+      
+}
+
+@media screen  and (max-width:750px) {
+  
+     .home__reg{
+        font-size: 1.2rem;
+    } 
+}

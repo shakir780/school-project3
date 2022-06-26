@@ -1,0 +1,238 @@
+
+.home{
+    animation: 1s ease-in-out 0s   SlideBottom;
+    height: 100vh;
+   overflow:auto;
+    background-color:#070792;
+}
+
+.home__text-box{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Poppins' , sans-serif;
+    position: fixed;
+   width: 100%;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+}
+.home__text-box--sub{
+    color: #ffffff;
+    text-align: center;
+    
+    
+    line-height: 1.8;
+    letter-spacing: 1.2;
+    font-family: National Bold,Helvetica,verdana,arial;
+    font-size: calc(2rem + ((1vw - 7.68px) * 0));
+    min-height: 0;
+
+
+    position: fixed;
+   
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 0 3rem;
+}
+.home__button{
+    text-align: center;  
+    border: none;
+     width: 300px;  
+     height: 200px;  
+     padding-top: 100px;  
+     margin: auto;
+    position: fixed;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+}
+.home__button button{
+    align-items: center;
+    justify-content: center;
+     display: inline-flex;
+     appearance: none;
+     cursor: pointer;
+     height: 66px;
+     margin: 0;
+     padding: 0;
+     background-color: white;
+    
+     text-align: center;
+     user-select: none;
+     white-space: normal;
+     border-radius: 35px;
+     min-width: 330px;
+     transition: all .15s ease-in-out;
+        overflow: hidden;
+        -webkit-tap-highlight-color: transparent;
+        -webkit-highlight: none;
+        border: none; 
+}
+.home__button button span{
+    position: relative;
+    transition: all .3s ease;
+    padding-right: 2.5rem;
+    transform: translateX(18px);
+    opacity: 1;
+    color: #28475c;
+    font-size: 2rem;
+   margin-left: 2rem;
+    min-height: 0;
+    font-family: 'Roboto';
+}
+
+.home__button button:after {
+    content: "\2192";
+    position: relative;
+    opacity: 0;  
+   color: var(--color-bg);
+  top:-0.1rem;
+  right:0px;
+    transition: 0.5s;
+    font-size: 3.5rem;
+  }
+  /* .home__button button:hover{
+    padding-right: 24px;
+    padding-left:8px;
+  } */
+  .home__button button:hover:after {
+    opacity: 1;
+    right:-2rem;
+  }
+  .home__button button:hover{
+    /* background: rgb(152, 160, 226); */
+}
+
+/***Animation **/
+@keyframes Slideup{
+    0% {
+        opacity: 0;
+        transform: translateY(110%);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @keyframes SlideBottom{
+        0% {
+           
+            transform: translateY(-100%);
+          }
+          100% {
+           
+            transform: translateY(0);
+          }
+        }
+        /*****SMALLER PHONES *****/
+
+        @media screen  and (min-width:200px) {
+            .home__text-box{
+                font-size: 1.2rem;
+                top: 30%;
+            
+                }
+                .home__text-box--sub{
+                  
+                    top: 60%;
+                    font-size: calc(1.9rem + ((1vw - 3.2px) * 0));
+                   line-height: calc(2.7rem + ((1vw - 3.2px) * 0));
+                }
+                .home__button{
+                    top: 90%;
+                }
+
+                .home__button button{
+                    min-width: 240px;
+                     height:44px;
+                    
+                     }
+
+        }
+/****SMALL DEVICES AND MOST PHONES ***/
+
+@media screen  and (min-width:350px) {
+    .home__text-box{
+        font-size: 1.3rem;
+        top: 28%;
+    
+        }
+        .home__text-box--sub{
+            top: 47%;
+            font-size: calc(1.5rem + ((1vw - 3.2px) * 0));
+           line-height: calc(2.7rem + ((1vw - 3.2px) * 0));
+        }
+        .home__button{
+            top: 65%;
+        }
+
+        .home__button button{
+            min-width: 280px;
+            height:42px;
+        }
+}
+
+
+/** Most tablets***/
+
+@media screen  and (min-width:700px) {
+    .home__text-box{
+        font-size: 2.3rem;
+        top: 35%;
+    
+        }
+        .home__text-box--sub{
+            top: 53%;
+            font-size: calc(1.8rem + ((1vw - 3.2px) * 0));
+           line-height: calc(2.7rem + ((1vw - 3.2px) * 0));
+        }
+        .home__button{
+            top: 65%;
+        }
+
+        .home__button button{
+            min-width: 290px;
+            height:42px;
+        }
+
+}
+
+
+/**Large devices and wide screens****/
+
+@media screen  and (min-width:1020px) {
+    .home__text-box{
+        font-size: 2.4rem;
+        top: 36%;
+    
+        }
+        .home__text-box--sub{
+            top: 53%;
+            font-size: calc(2.3rem + ((1vw - 3.2px) * 0));
+           line-height: calc(3rem + ((1vw - 5.2px) * 0));
+        }
+        .home__button{
+            top: 65%;
+        }
+
+        .home__button button{
+            min-width: 320px;
+            height:65px;
+        }
+
+
+}
+
+
+
+
+
+
+
+
+ 
+
