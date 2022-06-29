@@ -1,8 +1,8 @@
 import React from 'react'
-import ApplicantDashboard from './ApplicantDashBoard/ApplicantDashboard'
+import Student from './Students/Students';
 import Sidebar from './SideBar/SideBar';
 import RightSide from './RightSide/RightSide';
-import Admins from './Admins/Admin';
+
 import {
     BrowserRouter as Router,
     Switch,
@@ -10,12 +10,12 @@ import {
     Routes,
   } from "react-router-dom";
   import './Dashboard.css'
-const Dashboard = () => {
+const StudentDashboard = () => {
   return (
     <div className='dashboard'>
         <div className="dashboard-glass">
           <Sidebar/>
-        <ApplicantDashboard />
+       <Student/>
        
         <RightSide />
 
@@ -26,4 +26,4 @@ const Dashboard = () => {
   )
 }
 
-export default Dashboard
+export default StudentDashboard

@@ -327,10 +327,7 @@ transform: translate(0%,20%);
         left: -10%;
       }
     .right-arrow{
-        right: -20%;
-        width: 30px;
-        height: 30px;
-        top: -26.8%;
+       right: 5%;
     }
     .landing__bodyText h4{
         width: 75%;

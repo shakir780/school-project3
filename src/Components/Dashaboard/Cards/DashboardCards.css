@@ -1,6 +1,6 @@
 .Cards {
     display: flex;
-    gap: 10px;
+    gap: 2rem;
   }
   .parentContainer{
     width: auto;
@@ -19,6 +19,7 @@
   {
     .Cards{
       width: 90%;
+      
     }
   }
   

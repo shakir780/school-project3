@@ -1,0 +1,119 @@
+.modalBackground {
+    width: 100vw;
+    height: 100vh;
+
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .adminModal{
+    background-color: white;
+  }
+  .modalContainer {
+    width: 500px;
+    height: 500px;
+    border-radius: 12px;
+    
+    
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    position: relative;
+    animation-name: modal-animation;
+    animation-duration: 0.5s;
+   
+  }
+  
+  .modalContainer .title {
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .titleCloseBtn {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .titleCloseBtn button {
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  
+  .modalContainer .body {
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+    text-align: center;
+  }
+  
+  .modalContainer .footer {
+    flex: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modalContainer .footer button {
+    width: 150px;
+    height: 45px;
+    margin: 10px;
+    border: none;
+    background-color: cornflowerblue;
+    color: white;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  #cancelBtn {
+    background-color: crimson;
+  }
+  .newAdmin__container{
+    margin: 20px auto 0;
+   
+    border-radius: 6px;
+    height: 257px;
+  }
+ .AdminInfo{
+    margin: 1rem;
+ }
+ .admin,.adminEmail,.AdminPassword{
+    margin-bottom: 1rem;
+   border-bottom: 0.5px solid black;
+ }
+ .AdminSubmit{
+    position: relative;
+    display: inline-block;
+    padding: 10px 10px;
+    margin: 10px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    background: linear-gradient(90deg, #0162c8, #55e7fc);
+    overflow: hidden;
+    cursor: pointer;
+ }
+ @keyframes modal-animation {
+    from {
+        top: -100px;
+        opacity: 0;
+    }
+    to {
+        top: 0px;
+        opacity: 1;
+    }
+}
+  

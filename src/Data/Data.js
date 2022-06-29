@@ -23,17 +23,28 @@ export const SidebarData = [
   {
     icon: UilEstate,
     heading: "Applicants",
-    path: "/",
+    path: "/Dashboard",
   },
   {
     icon: UilClipboardAlt,
     heading: "Students",
-    path: "/student",
+    path: "/StudentDashboard",
+  },
+
+  {
+    icon: UilUsersAlt,
+    heading: "Admins",
+    path: "/Admins",
   },
   {
     icon: UilUsersAlt,
-    heading: "Hostel Registration",
-    path: "/hostel",
+    heading: "Single Hostel",
+    path: "/SingleDashboard",
+  },
+  {
+    icon: UilUsersAlt,
+    heading: "Double Hostel",
+    path: "/DoubleDashboard",
   },
   // {
   //   icon: UilPackage,
@@ -224,6 +235,94 @@ export const StudentData = [
     title: "Total Students Rejected",
     color: {
       backGround: "linear-gradient(180deg, #bb67ff 0%, #c484f3 100%)",
+      boxShadow: "0px 10px 20px 0px #e0c6f5",
+    },
+    barValue: 70,
+    value: "25,970",
+    png: UilUsdSquare,
+    series: [
+      {
+        name: "Applicants",
+        data: [31, 40, 28, 51, 42, 109, 100],
+      },
+    ],
+  },
+];
+export const AdminsData = [
+  {
+    title: "Total Admins",
+    color: {
+      backGround: "linear-gradient(180deg, #bb67ff 0%, #c484f3 100%)",
+      boxShadow: "0px 10px 20px 0px #e0c6f5",
+    },
+    barValue: 70,
+    value: "25,970",
+    png: UilUsdSquare,
+    series: [
+      {
+        name: "Applicants",
+        data: [31, 40, 28, 51, 42, 109, 100],
+      },
+    ],
+  },
+];
+
+export const SingleRoomData = [
+  {
+    title: "Single Boys Room",
+    color: {
+      backGround: "linear-gradient(180deg, #bb67ff 0%, #c484f3 100%)",
+      boxShadow: "0px 10px 20px 0px #e0c6f5",
+    },
+    barValue: 70,
+    value: "25,970",
+    png: UilUsdSquare,
+    series: [
+      {
+        name: "Applicants",
+        data: [31, 40, 28, 51, 42, 109, 100],
+      },
+    ],
+  },
+  {
+    title: "Single Girls Room",
+    color: {
+      backGround: "linear-gradient(180deg, #bb67ff 0%, #c494f3 100%)",
+      boxShadow: "0px 10px 20px 0px #e0c6f5",
+    },
+    barValue: 70,
+    value: "25,970",
+    png: UilUsdSquare,
+    series: [
+      {
+        name: "Applicants",
+        data: [31, 40, 28, 51, 42, 109, 100],
+      },
+    ],
+  },
+];
+
+export const DoubleRoomData = [
+  {
+    title: "Double Boys Room",
+    color: {
+      backGround: "linear-gradient(180deg, #bb67ff 0%, #c484f3 100%)",
+      boxShadow: "0px 10px 20px 0px #e0c6f5",
+    },
+    barValue: 70,
+    value: "25,970",
+    png: UilUsdSquare,
+    series: [
+      {
+        name: "Applicants",
+        data: [31, 40, 28, 51, 42, 109, 100],
+      },
+    ],
+  },
+  {
+    title: "Double Girls Room",
+    color: {
+      backGround: "linear-gradient(180deg, #cb67ff 0%, #c494f3 100%)",
       boxShadow: "0px 10px 20px 0px #e0c6f5",
     },
     barValue: 70,

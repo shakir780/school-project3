@@ -1,5 +1,5 @@
 import React from 'react'
-import ApplicantDashboard from './ApplicantDashBoard/ApplicantDashboard'
+import SingleHostel from './Hostel/SingleHostel';
 import Sidebar from './SideBar/SideBar';
 import RightSide from './RightSide/RightSide';
 import Admins from './Admins/Admin';
@@ -10,12 +10,12 @@ import {
     Routes,
   } from "react-router-dom";
   import './Dashboard.css'
-const Dashboard = () => {
+const SingleDashboard = () => {
   return (
     <div className='dashboard'>
         <div className="dashboard-glass">
           <Sidebar/>
-        <ApplicantDashboard />
+        <SingleHostel/>
        
         <RightSide />
 
@@ -26,4 +26,4 @@ const Dashboard = () => {
   )
 }
 
-export default Dashboard
+export default SingleDashboard

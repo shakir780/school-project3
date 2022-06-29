@@ -1,0 +1,212 @@
+.Hostel{
+    font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #fff;
+  margin: 0;
+}
+.Hostel::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-darkblue);
+    background-image: linear-gradient(
+        115deg,
+        rgba(58, 58, 158, 0.8),
+        rgba(136, 136, 206, 0.7)
+      ),
+      url('https://images.unsplash.com/photo-1619810230359-b2c2f61c49cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .Hostel__header h1{
+    font-weight: 400;
+    line-height: 1.2;
+  }
+  label {
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+  }
+  input,
+button,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+.Hostel__container{
+    width: 100%;
+    margin: 10.125rem auto 0 auto;
+  }
+
+
+
+
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+  }
+  
+  .header {
+    padding: 0 0.625rem;
+    margin-bottom: 1.875rem;
+  }
+  
+  .description {
+    font-style: italic;
+    font-weight: 200;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  }
+  
+  .clue {
+    margin-left: 0.25rem;
+    font-size: 0.9rem;
+    color: #e4e4e4;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  /* form */
+  
+  #survey-form {
+    background:  rgba(27, 27, 50, 0.8);
+    padding: 2.5rem 0.625rem;
+    border-radius: 0.25rem;
+  }
+  @media (min-width: 576px) {
+    .Hostel__container {
+      max-width: 540px;
+    }
+  }
+  @media (min-width: 768px) {
+  .Hostel__container {
+    max-width: 720px;
+  }
+}
+
+.Hostel__header h1 {
+  padding: 0 0.625rem;
+  margin-bottom: 1.875rem;
+}
+
+
+
+.clue {
+  margin-left: 0.25rem;
+  font-size: 0.9rem;
+  color: #e4e4e4;
+}
+
+.text-center {
+  text-align: center;
+}
+
+  
+  @media (min-width: 480px) {
+    form {
+      padding: 10rem;
+    }
+  }
+  
+  .form-group {
+    margin: 0 auto 1.25rem auto;
+    padding: 0.25rem;
+  }
+  
+  .form-control {
+    display: block;
+    width: 100%;
+    height: 3.375rem;
+    padding: 0.375rem 0.75rem;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  .form-control::placeholder{
+    font-size: 1.2rem;
+  }
+  
+  .form-control:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  
+  select {
+    appearance: none;
+    outline: 0;
+    border: 0;
+    box-shadow: none;
+    /* Personalize */
+    flex: 1;
+    padding: 0 1em;
+    color: #495057;
+    background-color: white;
+    background-image: none;
+    cursor: pointer;
+  }
+ /* Remove IE arrow */
+select::-ms-expand {
+  display: none;
+}
+/* Custom Select wrapper */
+.select {
+  position: relative;
+  display: flex;
+  width: 20em;
+  height: 3em;
+  border-radius: .25em;
+  overflow: hidden;
+}
+/* Arrow */
+.select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1em;
+  background-color: #34495e;
+  transition: .25s all ease;
+  pointer-events: none;
+}
+/* Transition */
+.select:hover::after {
+  color: #f39c12;
+}
+  
+  .input-textarea {
+    min-height: 120px;
+    width: 100%;
+    padding: 0.625rem;
+    resize: vertical;
+  }
+  
+  .submit-button {
+    display: block;
+    width:50%;
+    
+    padding: 1.3rem;
+    font-size: 1.5rem;
+    background: #37af65;
+    color: inherit;
+    border-radius: 2px;
+    cursor: pointer;
+    margin:auto;
+  }
+  

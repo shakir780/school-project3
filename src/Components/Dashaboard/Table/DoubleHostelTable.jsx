@@ -6,8 +6,10 @@ import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
+import AdminModal from "../Modals/AdminModal";
+import { AiFillEdit } from "react-icons/ai";
+import {MdOutlineDeleteOutline } from "react-icons/md";
 import "./Table.css";
-import ApplicantsModal from "../Modals/ApplicantsModal";
 
 function createData(name, trackingId, date, status) {
     return { name, trackingId, date, status };
@@ -42,25 +44,32 @@ function createData(name, trackingId, date, status) {
       }
     }
   }
-  export default function BasicTable() {
+  export default function DoubleHostelTable() {
     const [modalOpen, setModalOpen] = React.useState(false);
     return (
         <div className="Table">
-        <h3>Applicants </h3>
+        <a   className=""
+     
+        
+        >Double Room</a>
           <TableContainer
             component={Paper}
             style={{ boxShadow: "0px 13px 20px 0px #80808029" }}
           >
             <Table sx={{ minWidth: 650 }} aria-label="simple table">
               <TableHead>
-                <TableRow classname='tablerow'>
-                  <TableCell>Applicant</TableCell>
-                  <TableCell id='ApplicantId' align="left">ID</TableCell>
-                  <TableCell id='NameEngId' align="left">Name</TableCell>
-                  <TableCell id='NationalityId' align="left">Nationality</TableCell>
-                  <TableCell id='DetailsId' align="left">Details</TableCell>
-                  <TableCell id='Status' align="left">Status</TableCell>
-                  <TableCell id='Status' align="left">Accept/Reject</TableCell>
+                <TableRow>
+                
+                <TableCell id='SingleRoomId' align="left">Room Id</TableCell>
+                  <TableCell id='StudentName' align="left">Student Name 1</TableCell>
+                  <TableCell id='StudentId' align="left">Student ID 1</TableCell>
+                  <TableCell id='StudentName' align="left">Student Name 2</TableCell>
+                  <TableCell id='StudentId' align="left">Student ID 2</TableCell>
+                 
+                 
+                  <TableCell id='DateOfStartId' align="left">Date of Start</TableCell>
+                  <TableCell id='DateofEndId' align="left">Date of End</TableCell>
+                  
                 </TableRow>
               </TableHead>
               <TableBody style={{ color: "white" }}>
@@ -74,28 +83,15 @@ function createData(name, trackingId, date, status) {
                     </TableCell>
                     <TableCell align="left">{row.trackingId}</TableCell>
                     <TableCell align="left">{row.date}</TableCell>
-                    <TableCell align="left">
-                      Egyp
-                    </TableCell>
-                    <TableCell align="left" className="Details"   onClick={() => {
-            setModalOpen(true);
-          }}>Details</TableCell>
-                    <TableCell align="left">
-                      <span className="status" style={makeStyle(row.status)}>{row.status}</span>
-                    </TableCell>
-                    <TableCell align="left">
-                      <div className="acceptOrReject">
-                      <a href="#" class="accept">Accept <span class="fa fa-check"></span></a>
-                     <a href="#" class="deny">Reject<span class="fa fa-close"></span></a>
-                      </div>
-                   
-                    </TableCell>
+                    <TableCell>shakss@ymail.com</TableCell>
+               
+                  
                   </TableRow>
                 ))}
               </TableBody>
             </Table>
           </TableContainer>
-          {modalOpen && <ApplicantsModal setOpenModal={setModalOpen} />}
+          {modalOpen && <AdminModal setOpenModal={setModalOpen} />}
         </div>
     );
   }

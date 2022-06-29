@@ -1,9 +1,13 @@
 .ApplicantDashboard{
-    /* padding-top: 1rem; */
+    padding-top: 1rem;
+   
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
    
+}
+.ApplicantDashboard h1{
+margin-bottom: 2rem;
 }
 
 @media screen and (max-width: 1200px) {

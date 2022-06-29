@@ -12,13 +12,10 @@
     
 }
 body{
-    background-color: #3939b6 ;
+    background-color: #3939b6 !important;
     font-family: 'Poppins', sans-serif;
 }
 html{
     font-size: 62.5%;
-}
-:root{
    
-    --color-bg:#090979;
 }

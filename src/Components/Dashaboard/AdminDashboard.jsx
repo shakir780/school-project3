@@ -10,20 +10,20 @@ import {
     Routes,
   } from "react-router-dom";
   import './Dashboard.css'
-const Dashboard = () => {
+const AdminDashboard = () => {
   return (
     <div className='dashboard'>
         <div className="dashboard-glass">
           <Sidebar/>
-        <ApplicantDashboard />
+        <Admins />
        
         <RightSide />
 
 
-
+{/* <RightSide /> */}
         </div>
     </div>
   )
 }
 
-export default Dashboard
+export default AdminDashboard

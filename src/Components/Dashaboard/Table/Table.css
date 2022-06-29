@@ -1,5 +1,5 @@
 .MuiTableRow-root > * {
-    padding: 10px;
+    padding: 50px;
   }
   
   .MuiTableRow-root.MuiTableRow-head > * {
@@ -9,10 +9,35 @@
   .Table td,
   th {
     border: none !important;
+
     
   }
+  .Table td{
+font-size: 1.4rem;
+  }
+  .Table th{
+    font-size: 1.5rem;
+  }
   .Table{
-    width: 80%;
+    width: 70%;
+    margin-top: 2rem;
+    font-size: 2rem;
+  }
+  .addAdmin{
+    float: right;
+    position: relative;
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 10px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    background: linear-gradient(90deg, #0162c8, #55e7fc);
+    overflow: hidden;
+    cursor: pointer;
   }
   
   .Table:first-child {
@@ -22,10 +47,41 @@
     padding: 8px;
     border-radius: 9px;
   }
-  
-  .Details {
-    color: #00b5ff !important;
+  .accept{
+    background: rgba(2, 60, 10, 0.47);
+    color: green;
+    padding: 8px;
+    border-radius: 9px;
+    text-decoration: none;
   }
+  .deny{
+    background: rgba(242, 54, 54, 0.47);
+    color: red;
+    padding: 8px;
+    border-radius: 9px;
+    text-decoration: none;
+  }
+  .acceptOrReject{
+    /* font-size: 1.8rem; */
+    display: flex;
+  text-decoration: none;
+  }
+  .adminacceptOrReject{
+font-size: 1rem;
+
+  }
+  .Details {
+    cursor: pointer;
+    color: #00b5ff !important;
+    transition: all 0.3s ease;
+  }
+  .Details:hover{
+    text-decoration: underline;
+  }
+  .tablerow th{
+    font-size: 2rem !important;
+  }
+  
   
   @media screen and (max-width: 1200px) {
     .Table {
@@ -41,6 +97,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: 23rem;
+      width: 35rem;
+     
     }
   }

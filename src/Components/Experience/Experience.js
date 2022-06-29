@@ -15,7 +15,7 @@ const Experience = () => {
         <Link to="/">
           <HeaderBox />
         </Link>
-        <SideMenu />
+
         <div className="experience__container">
           <div className="experience_info">
             <div className="experiecne__img">
@@ -44,10 +44,12 @@ const Experience = () => {
                 <MdEmojiEvents className="experice__icon" />
                 <h5>Events</h5>
               </article>
-              <article className="experience__card">
-                <GiHouse className="experice__icon" />
-                <h5>Hostel Registration</h5>
-              </article>
+              <Link to="/Hostelreg">
+                <article className="experience__card">
+                  <GiHouse className="experice__icon" />
+                  <h5>Hostel Registration</h5>
+                </article>
+              </Link>
               <article className="experience__card">
                 <SiInformatica className="experice__icon" />
                 <h5>About ACU</h5>
