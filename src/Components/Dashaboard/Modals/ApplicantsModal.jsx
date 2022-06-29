@@ -124,7 +124,25 @@ const ApplicantsModal = ({ setOpenModal}) => {
                   <td>012346678</td>
                   </div>
                 </tr>
-            
+
+                <tr>
+                <div className="tinfo">
+                <th width="30%">birth cerificate</th>
+                  <td width="2%">:</td>
+                  <td><a href="/images/myw3schoolsimage.jpg" download>
+  <img src="/images/myw3schoolsimage.jpg" alt="W3Schools" width="104" height="142"/>
+</a></td>
+                  </div>
+                </tr>
+                <tr>
+                <div className="tinfo">
+                <th width="30%">School cerificate</th>
+                  <td width="2%">:</td>
+                  <td><a href="/images/myw3schoolsimage.jpg" download>
+  <img src="/images/myw3schoolsimage.jpg" alt="W3Schools" width="104" height="142"/>
+</a></td>
+                  </div>
+                </tr>
               </table>
             </div>
           </div>

@@ -54,36 +54,32 @@ function createData(name, trackingId, date, status) {
             <Table sx={{ minWidth: 650 }} aria-label="simple table">
               <TableHead>
                 <TableRow classname='tablerow'>
-                  <TableCell>Applicant</TableCell>
-                  <TableCell id='ApplicantId' align="left">ID</TableCell>
-                  <TableCell id='NameEngId' align="left">Name</TableCell>
-                  <TableCell id='NationalityId' align="left">Nationality</TableCell>
-                  <TableCell id='DetailsId' align="left">Details</TableCell>
-                  <TableCell id='Status' align="left">Status</TableCell>
-                  <TableCell id='Status' align="left">Accept/Reject</TableCell>
+                <TableCell id='Applicants_head_ApplicantName' align="left">Name</TableCell>
+                  <TableCell id='Applicants_head_ApplicantId' align="left">ID</TableCell>
+              
+                  <TableCell id='Applicants_head_NationalityId' align="left">Nationality</TableCell>
+                  <TableCell id='Applicants_head_DetailsId' align="left">Details</TableCell>
+                  <TableCell id='Applicants_head_Status' align="left">Status</TableCell>
+                  <TableCell id='Applicants_head_Accept/Reject' align="left">Accept/Reject</TableCell>
                 </TableRow>
               </TableHead>
               <TableBody style={{ color: "white" }}>
-                {rows.map((row) => (
+              
                   <TableRow
-                    key={row.name}
+                  
                     sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
                   >
-                    <TableCell component="th" scope="row">
-                      {row.name}
-                    </TableCell>
-                    <TableCell align="left">{row.trackingId}</TableCell>
-                    <TableCell align="left">{row.date}</TableCell>
-                    <TableCell align="left">
-                      Egyp
-                    </TableCell>
-                    <TableCell align="left" className="Details"   onClick={() => {
+                    <TableCell id='Applicants_Body_ApplicantName' align="left">Name</TableCell>
+                  <TableCell id='Applicants_Body_ApplicantId' align="left">ID</TableCell>
+              
+                  <TableCell id='Applicants_Body_NationalityId' align="left">Nationality</TableCell>
+                  <TableCell id='Applicants_Body_Status' align="left" className="Details"   onClick={() => {
             setModalOpen(true);
           }}>Details</TableCell>
-                    <TableCell align="left">
-                      <span className="status" style={makeStyle(row.status)}>{row.status}</span>
-                    </TableCell>
-                    <TableCell align="left">
+                  <TableCell id='Applicants_Body__Status' align="left">Status</TableCell>
+                    
+                
+                    <TableCell id='Applicants_Body_Accept/Reject' align="left">
                       <div className="acceptOrReject">
                       <a href="#" class="accept">Accept <span class="fa fa-check"></span></a>
                      <a href="#" class="deny">Reject<span class="fa fa-close"></span></a>
@@ -91,7 +87,7 @@ function createData(name, trackingId, date, status) {
                    
                     </TableCell>
                   </TableRow>
-                ))}
+               
               </TableBody>
             </Table>
           </TableContainer>

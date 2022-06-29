@@ -60,34 +60,38 @@ function createData(name, trackingId, date, status) {
               <TableHead>
                 <TableRow>
                 
-                <TableCell id='SingleRoomId' align="left">Room Id</TableCell>
-                  <TableCell id='StudentName' align="left">Student Name 1</TableCell>
-                  <TableCell id='StudentId' align="left">Student ID 1</TableCell>
-                  <TableCell id='StudentName' align="left">Student Name 2</TableCell>
-                  <TableCell id='StudentId' align="left">Student ID 2</TableCell>
+                <TableCell id='DoubleHostel_head_DoubleRoomID' align="left">Room Id</TableCell>
+                  <TableCell id='DoubleHostel_head_StudentName' align="left">Student Name 1</TableCell>
+                  <TableCell id='DoubleHostel_head_StudentId' align="left">Student ID 1</TableCell>
+                  <TableCell id='DoubleHostel_head_StudentName2' align="left">Student Name 2</TableCell>
+                  <TableCell id='DoubleHostel_head_StudentId2' align="left">Student ID 2</TableCell>
                  
                  
-                  <TableCell id='DateOfStartId' align="left">Date of Start</TableCell>
-                  <TableCell id='DateofEndId' align="left">Date of End</TableCell>
+                  <TableCell id='DoubleHostel_head_DateOfStartId' align="left">Date of Start</TableCell>
+                  <TableCell id='DoubleHostel_head_DateofEndId' align="left">Date of End</TableCell>
                   
                 </TableRow>
               </TableHead>
               <TableBody style={{ color: "white" }}>
-                {rows.map((row) => (
+                
                   <TableRow
-                    key={row.name}
+                  
                     sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
                   >
-                    <TableCell component="th" scope="row">
-                      {row.name}
-                    </TableCell>
-                    <TableCell align="left">{row.trackingId}</TableCell>
-                    <TableCell align="left">{row.date}</TableCell>
-                    <TableCell>shakss@ymail.com</TableCell>
+                    {/* <TableCell component="th" scope="row">
+                    
+                    </TableCell> */}
+                    <TableCell id="DoubleHostel_Body_DoubleRoomID" align="left">1235</TableCell>
+                    <TableCell id='DoubleHostel_Body_StudentName' align="left">ziad</TableCell>
+                    <TableCell id='DoubleHostel_Body_StudentId' align="left">134</TableCell>
+                    <TableCell id='DoubleHostel_Body_StudentName2' align="left">serk </TableCell>
+                    <TableCell id='DoubleHostel_Body_StudentId2' align="left">Student ID 2</TableCell>
+                    <TableCell id='DoubleHostel_Body_DateOfStartId' align="left">2000/1/2t</TableCell>
+                    <TableCell id='DoubleHostel_Body_DateofEndId' align="left">2000/7/2</TableCell>
                
                   
                   </TableRow>
-                ))}
+              
               </TableBody>
             </Table>
           </TableContainer>

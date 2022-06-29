@@ -62,26 +62,25 @@ function createData(name, trackingId, date, status) {
               <TableHead>
                 <TableRow>
                   <TableCell>Admins</TableCell>
-                  <TableCell id='AdminUserNameId' align="left">Username</TableCell>
-                  <TableCell id='AdminPasswordId' align="left">Password</TableCell>
-                  <TableCell id='AdminEmailId' align="left">Email</TableCell>
-                  <TableCell id='EditDeleteId' align="left">Edit/Delete</TableCell>
+                  <TableCell id='Admin_head_usernameID' align="left">Username</TableCell>
+                  <TableCell id='Admin_head_AdminPasswordId' align="left">Password</TableCell>
+                  <TableCell id='Admin_head_AdminEmailId' align="left">Email</TableCell>
+                  <TableCell id='Admin_head_EditDeleteId' align="left">Edit/Delete</TableCell>
                  
                 </TableRow>
               </TableHead>
               <TableBody style={{ color: "white" }}>
-                {rows.map((row) => (
+                
                   <TableRow
-                    key={row.name}
+                  
                     sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
                   >
-                    <TableCell component="th" scope="row">
-                      {row.name}
-                    </TableCell>
-                    <TableCell align="left">{row.trackingId}</TableCell>
-                    <TableCell align="left">{row.date}</TableCell>
-                    <TableCell>shakss@ymail.com</TableCell>
-                    <TableCell align="left">
+                  
+                  <TableCell>Admins</TableCell>
+                  <TableCell id='Admin_Body_usernameID' align="left">Username</TableCell>
+                  <TableCell id='Admin_Body_AdminPasswordId' align="left">Password</TableCell>
+                  <TableCell id='Admin_Body_AdminEmailId' align="left">Email</TableCell>
+                    <TableCell id='Admin_Body_EditDeleteID' align="left">
                       <div className="adminacceptOrReject">
                       <a href="#" class="accept"><AiFillEdit/>  <span class="fa fa-check"></span></a>
                      
@@ -92,7 +91,7 @@ function createData(name, trackingId, date, status) {
                  
                   
                   </TableRow>
-                ))}
+             
               </TableBody>
             </Table>
           </TableContainer>
