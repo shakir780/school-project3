@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 import SideMenu from "../SidebarNav/SideBarNav";
 import LogIn from "../LogIn/LogIn";
+import MovingCloud from "../MovingClouds/MovingCloud";
 import {
   faBars,
   faXmark,
@@ -13,16 +14,22 @@ import {
 import "./Landing.css";
 const Landing = () => {
   const [isActive, setisActive] = useState(true);
+  const [isDisabled, setIsDisabled] = useState(false);
   const toggleClass = () => {
     setisActive(!isActive);
   };
+  // const diableClick = () => {
+
+  //   setIsDisabled(!isDisabled);
+  // };
+
   return (
     <section className="Landing">
       <Link to="/">
         <HeaderBox />
         <LogIn />
       </Link>
-
+      <MovingCloud />
       <div className="landing__body">
         <div
           className={

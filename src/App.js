@@ -10,6 +10,8 @@ import SingleDashboard from "./Components/Dashaboard/SingleDashboard";
 import DoubleDashboard from "./Components/Dashaboard/DoubleHostelDashboard";
 import StudentDashboard from "./Components/Dashaboard/StudentDashboard";
 import AdminLogin from "./Components/Dashaboard/AdminLogin/AdminLogin";
+import MovingCloud from "./Components/MovingClouds/MovingCloud";
+import Faculties from "./Components/Experience/Faculties/Faculties";
 import {
   BrowserRouter as Router,
   Switch,
@@ -31,6 +33,8 @@ const App = () => {
           <Route path="/SingleDashboard" exact element={<SingleDashboard />} />
           <Route path="/DoubleDashboard" exact element={<DoubleDashboard />} />
           <Route path="/AdminLogin" exact element={<AdminLogin />} />
+          <Route path="/MovingCloud" exact element={<MovingCloud />} />
+          {/* <Route path="/Faculties" exact element={<Faculties />} /> */}
 
           <Route
             path="/StudentDashboard"

@@ -3,12 +3,14 @@ import "./Home.css";
 import HeaderBox from "../Header-box/HeaderBox";
 import SideMenu from "../SidebarNav/SideBarNav";
 import LogIn from "../LogIn/LogIn";
+import MovingCloud from "../MovingClouds/MovingCloud";
 import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <section className="home">
       <HeaderBox />
       <LogIn />
+      <MovingCloud />
 
       <div className="home__text-box">
         <h1>

@@ -18,6 +18,12 @@ overflow: hidden;
 
 
 }
+.LandingImage,.landing__body-left-div__movingImage,.left-div__heading,.left-div__text-box{
+  animation: 0.3s ease-in-out 0s  MoveFromleft;
+}
+.LandingImage2,.landing__body-right-div__movingImage,.right-div__heading,.right-div__text-box{
+  animation: 0.3s ease-in-out 0s  MoveFromRight;
+}
 .landing__body::after{
     content: "";
     position: absolute;
@@ -54,7 +60,8 @@ overflow: hidden;
   
     border-radius: 60% 40% 45% 60% /60% 30% 60% 40%;
   
-    animation: liquid 8s linear infinite alternate;
+    animation: liquid 8s linear infinite alternate
+    , 0.1s ease-in-out 0s  MoveFromleft;
   
 }
 .landing__body-right-div__movingImage{
@@ -64,13 +71,16 @@ overflow: hidden;
   margin: 4rem auto;
   border-radius: 60% 40% 45% 60% /60% 40% 60% 40%;
 
-  animation: liquid 8s linear infinite alternate;
+  animation: liquid 8s linear infinite alternate,
+   0.1s ease-in-out 0s  MoveFromRight;
 }
 .landing__bodyText{
     font-size: 2rem;
     color: white;
     margin-bottom: 4rem;
-    transform: translate(0%,30%);
+    /* transform: translate(0%,30%); */
+    position: relative;
+    top: 3%;
     text-align: center;
     width: 100%;
 }
@@ -146,12 +156,16 @@ color: white;
 }
 .LandingImage{
     width:110%;
-    transform: translate(0%,30%);
-    margin-bottom: 2rem;
+    position: relative;
+top: 20%;
+   
 }
 .LandingImage2{
 width: 100%;
-transform: translate(0%,20%);
+position: relative;
+top: 17%;
+
+/* transform: translate(0%,20%); */
 }
 
 
@@ -214,7 +228,29 @@ transform: translate(0%,20%);
   .right-arrow:hover {
     transform: translateX(8px);
   }
+  @keyframes MoveFromleft {
+    0% {
+           
+      transform: translatex(-100%);
+    }
+    100% {
+     
+      transform: translateX(0);
+    }
+  
+  }
 
+  @keyframes MoveFromRight {
+    0% {
+           
+      transform: translatex(100%);
+    }
+    100% {
+     
+      transform: translateX(0);
+    }
+  
+  }
 
   @keyframes liquid {
     0%,
@@ -271,7 +307,7 @@ transform: translate(0%,20%);
 
                 }
                 .right-arrow{
-                    right: 1%;
+                    left: -25%;
                     width: 30px;
                     height: 30px;
                     top: -26.1%;
@@ -304,7 +340,7 @@ transform: translate(0%,20%);
                           
 }
 
-@media only screen  and (min-width:320px) {
+@media only screen  and (min-width:310px) {
     .Landing{
    height: 100vh;
     }
@@ -327,7 +363,7 @@ transform: translate(0%,20%);
         left: -10%;
       }
     .right-arrow{
-       right: 5%;
+      left: -3%;
     }
     .landing__bodyText h4{
         width: 75%;
@@ -340,13 +376,7 @@ transform: translate(0%,20%);
         top: -18%;
         left: 4%;
     }
-    /* .landing__body-right-div__button
-                            {
-                                position: relative;
-                                top: -20%;
-                            } */
-}
-
+    
 @-webkit-keyframes slideright{
     100% { left: 0; }
 }
@@ -365,7 +395,7 @@ transform: translate(0%,20%);
         left: -3%;
     }
     .right-arrow{
-        right: -10%;
+      left: -3%;
     }
     .landing__bodyHeader{
         width: 100%;
@@ -403,9 +433,7 @@ transform: translate(0%,20%);
 
 }
 @media screen  and (max-width:1020px) {
-/* .landing__body{
-    background-color: black;
-} */
+
 
 }
 @media screen  and (max-width:1280px) {
@@ -421,9 +449,7 @@ transform: translate(0%,20%);
                 display: block;
                 width: 100%;
             }
-            .right-arrow{
-                left: -2%;
-            }
+           
              .none{
         display: none;
     }
@@ -433,19 +459,18 @@ transform: translate(0%,20%);
     .right-arrow, .left-arrow{
         display: flex;
     }
-.left-div{
-        /* background-color: yellowgreen; */
-        -webkit-animation: slideright 0.5s forwards;
--webkit-animation-delay: 2s;
-animation: slideright 0.5s forwards;
-animation-delay: 2s;
-    }
 
 
 }
 
 
 @media screen  and (min-width:1280px) {
+  .right-div{
+    animation: 2.5s ease-in-out 0s  MoveFromRight;
+  }
+  .left-div{
+    animation: 2.5s ease-in-out 0s  MoveFromleft;
+  }
 .landing__bodyHeader{
     font-size: 2.7rem;
 }
@@ -472,6 +497,7 @@ height: 60px;
 }
 .landing__button button span{
 font-size: 1.8rem;
+}
 }
 }
 

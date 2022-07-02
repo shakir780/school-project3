@@ -4,19 +4,26 @@
     height: 100vh;
    overflow:auto;
     background-color:#070792;
+   
 }
 
 .home__text-box{
     color: rgb(255, 255, 255);
     text-align: center;
     font-size: 3rem;
+    font-weight: 500;
     font-family: 'Poppins' , sans-serif;
     position: fixed;
    width: 100%;
-    left: 50%;
-    top: 40%;
-    transform: translate(-50%, -50%);
+     /* left: 50%; */
+    bottom: 40%; 
+    margin-bottom: 3rem;
+ 
+    /* transform: translate(-50%, -50%); */
     text-transform: uppercase;
+    animation: 2s ease-in-out 0s    SlideBottom;
+    /* animation-delay: 5s; */
+  
 }
 .home__text-box--sub{
     color: #ffffff;
@@ -32,11 +39,11 @@
 
     position: fixed;
    
-    left: 50%;
-    top: 60%;
-    transform: translate(-50%, -50%);
+  
+   
     width: 100%;
     padding: 0 3rem;
+    animation: 2s ease-in-out 0s  SlideFromright;
 }
 .home__button{
     text-align: center;  
@@ -128,6 +135,17 @@
             transform: translateY(0);
           }
         }
+        @keyframes SlideFromright{
+            0% {
+           
+                transform: translatex(100%);
+              }
+              100% {
+               
+                transform: translateY(0);
+              }
+            
+        }
         /*****SMALLER PHONES *****/
 
         @media screen  and (min-width:200px) {
@@ -138,7 +156,7 @@
                 }
                 .home__text-box--sub{
                   
-                    top: 60%;
+                    top: 45%;
                     font-size: calc(1.9rem + ((1vw - 3.2px) * 0));
                    line-height: calc(2.7rem + ((1vw - 3.2px) * 0));
                 }
@@ -155,19 +173,21 @@
         }
 /****SMALL DEVICES AND MOST PHONES ***/
 
-@media screen  and (min-width:350px) {
+@media screen  and (min-width:300px) {
     .home__text-box{
-        font-size: 1.3rem;
-        top: 28%;
+        font-size: 1.7rem;
+        top: 25%;
     
         }
         .home__text-box--sub{
-            top: 47%;
-            font-size: calc(1.5rem + ((1vw - 3.2px) * 0));
-           line-height: calc(2.7rem + ((1vw - 3.2px) * 0));
+            width: 100%;
+            top: 43%;
+            font-weight: 500;
+            font-size: calc(2rem + ((1vw - 3.2px) * 0));
+           /* line-height: calc(2.7rem + ((1vw - 3.2px) * 0)); */
         }
         .home__button{
-            top: 65%;
+            top: 79%;
         }
 
         .home__button button{
@@ -175,23 +195,38 @@
             height:42px;
         }
 }
-
+@media screen  and (min-width:390px) {
+    .home__text-box{
+      
+        top: 18%;
+    
+        }
+        .home__text-box--sub{
+           
+            top: 33%;
+           
+        }
+        .home__button{
+            top: 59%;
+        }
+}
 
 /** Most tablets***/
 
 @media screen  and (min-width:700px) {
     .home__text-box{
         font-size: 2.3rem;
-        top: 35%;
+        top: 24%;
     
         }
         .home__text-box--sub{
-            top: 53%;
-            font-size: calc(1.8rem + ((1vw - 3.2px) * 0));
+            top: 38%;
+            font-size: calc(2.3rem + ((1vw - 3.2px) * 0));
+            font-weight: 500;
            line-height: calc(2.7rem + ((1vw - 3.2px) * 0));
         }
         .home__button{
-            top: 65%;
+            top: 55%;
         }
 
         .home__button button{
@@ -206,12 +241,12 @@
 
 @media screen  and (min-width:1020px) {
     .home__text-box{
-        font-size: 2.4rem;
-        top: 36%;
+        font-size: 3.4rem;
+        top: 23%;
     
         }
         .home__text-box--sub{
-            top: 53%;
+            top: 48%;
             font-size: calc(2.3rem + ((1vw - 3.2px) * 0));
            line-height: calc(3rem + ((1vw - 5.2px) * 0));
         }
