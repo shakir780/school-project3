@@ -31,34 +31,37 @@ const Experience = () => {
             </div>
 
             <div className="experience__cards">
-              <article className="experience__card card1">
-                <FaUniversity className="experice__icon" />
-                <h5>Faculties</h5>
-              </article>
+              <Link to="/faculties">
+                <article className="experience__card card1">
+                  <FaUniversity className="experice__icon" />
+                  <h5>Faculties</h5>
+                </article>
+              </Link>
               <Link to="/Admission">
                 <article className="experience__card card2">
                   <AiOutlineForm className="experice__icon" />
                   <h5>Admission</h5>
                 </article>
               </Link>
-              <article className="experience__card card3">
-                <MdEmojiEvents className="experice__icon" />
-                <h5>Events</h5>
-              </article>
+              <Link to="/event">
+                <article className="experience__card card3">
+                  <MdEmojiEvents className="experice__icon" />
+                  <h5>Events</h5>
+                </article>
+              </Link>
+
               <Link to="/Hostelreg">
                 <article className="experience__card card4">
                   <GiHouse className="experice__icon" />
                   <h5>Hostel Registration</h5>
                 </article>
               </Link>
-              <article className="experience__card card5">
-                <SiInformatica className="experice__icon" />
-                <h5>About ACU</h5>
-              </article>
-              <article className="experience__card card6">
-                <MdContactSupport className="experice__icon" />
-                <h5>Contact US</h5>
-              </article>
+              <Link to="/aboutus">
+                <article className="experience__card card5">
+                  <SiInformatica className="experice__icon" />
+                  <h5>About ACU</h5>
+                </article>
+              </Link>
             </div>
           </div>
         </div>

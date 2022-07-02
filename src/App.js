@@ -12,6 +12,8 @@ import StudentDashboard from "./Components/Dashaboard/StudentDashboard";
 import AdminLogin from "./Components/Dashaboard/AdminLogin/AdminLogin";
 import MovingCloud from "./Components/MovingClouds/MovingCloud";
 import Faculties from "./Components/Experience/Faculties/Faculties";
+import AboutUs from "./Components/Experience/AboutUs/AboutUs";
+import Event from "./Components/Experience/Events/Event";
 import {
   BrowserRouter as Router,
   Switch,
@@ -34,7 +36,9 @@ const App = () => {
           <Route path="/DoubleDashboard" exact element={<DoubleDashboard />} />
           <Route path="/AdminLogin" exact element={<AdminLogin />} />
           <Route path="/MovingCloud" exact element={<MovingCloud />} />
-          {/* <Route path="/Faculties" exact element={<Faculties />} /> */}
+          <Route path="/Faculties" exact element={<Faculties />} />
+          <Route path="/AboutUs" exact element={<AboutUs />} />
+          <Route path="/Event" exact element={<Event />} />
 
           <Route
             path="/StudentDashboard"

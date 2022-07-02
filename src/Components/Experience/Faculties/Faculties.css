@@ -1,96 +1,161 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.faculties{
+  overflow-x: hidden;
+  animation: 1s ease-in-out 0s  MoveFromRight;
+}
+.faculty__pharmacy{
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://img.freepik.com/free-photo/portrait-cheerful-handsome-pharmacist-leaning-counter-drugstore_109710-1738.jpg?w=2000') repeat fixed 100%;
+  background-size: cover;
+  color: white;
+  min-height: 70vh;
+ 
+}
+.faculty__pharmacy-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.faculty__pharmacy-title{
+  font-size: 5rem;
+  text-align: center;
+ margin: 15rem auto;
+ color: green;
+}
+.faculty__Engineer-title{
+color: blue;
+}
+.FaultyOfDetal-title{
+  color: red;
+}
+.facultyOfPhysicalTherapy-title{
+  color: rgb(82, 82, 179);
+}
+.FaultyOfDetal-title{
+  color: purple;
+}
+.FaultyOfBusiness-title{
+  color: yellowgreen;
+}
+.faculty-of-mass-communication-title{
+  color: rgb(128, 48, 48);
+}
+.facultyOfLanguage-title{
+  color: orangered;
+}
+.faculty__info{
+  font-size: 2.4rem;
+  text-align: center;
+ 
+  align-items: center;
+  line-height: 1.8;
+  background: rgba(0,0,0,0.2); color:white;
+}
+.faculty-image{
+  width: 100%;
+  margin-top: 1.4rem;
+}
+.facultyMission{
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.FacultyMission-header{
+  font-size: 2.4rem;
+  text-align: center;
+  align-items: center;
+  margin: 4rem;
+}
+.FacultyMission-info{
+
+  font-size: 2.2rem;
+  text-align: center;
+  align-items: center;
+  line-height: 1.8;
+  margin: 2rem;
+}
+.faculy__engineering-info{
+  background: rgba(0,0,0,0.5); color:white;
+}
+
+.faculty__Engineer{
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://www.fue.edu.eg/ImageHandler.ashx?Id=39734&SS=7b27e80b18d157ed9c25d15c436aab28') repeat fixed 100%;
+  background-size: cover;
+  color: aliceblue;
+  min-height: 70vh;
+}
+.facultyofDental{
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://diatechusa.com/wp-content/uploads/dental-student-tool-kit.jpg') repeat fixed 100%;
+  background-size: cover;
+  color: aliceblue;
+  min-height: 70vh;
+}
+.facultyOfPhysicalTherapy{
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://www.samford.edu/healthprofessions/images/header/physical-therapy-students-testing-head-injured-man.jpg') repeat fixed 100%;
+  background-size: cover;
+  color: aliceblue;
+  min-height: 70vh;
+}
+.facultyDesignAndArts{
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://www.timeshighereducation.com/sites/default/files/styles/article785xauto/public/into_london_art_facilities_-_painting_class_26054.jpg?itok=DMRp4OCR') repeat fixed 100%;
+  background-size: cover;
+  color: aliceblue;
+  min-height: 70vh;
+}
+.facultyBuisness{
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://www.business.nova.edu/images/CurrentStudents/current-students1.jpg') repeat fixed 100%;
+  background-size: cover;
+  color: aliceblue;
+  min-height: 70vh;
+}
+.faculty-of-mass-communication{
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://old.smc.edu.ng/wp-content/uploads/2013/07/media-class-466x350.png') repeat fixed 100%;
+  background-size: cover;
+  color: aliceblue;
+  min-height: 70vh;
+}
+.facultyOfLanguage{
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://www.betranslated.com/wp-content/uploads/2018/02/translation-universities-1.jpg') repeat fixed 100%;
+  background-size: cover;
+  color: aliceblue;
+  min-height: 70vh;
+}
+
+@media screen and (max-width:1350px) {
+  
+  .faculty__pharmacy-container{
+   
+    grid-template-columns: 1fr;
+  }
+  .faculty__pharmacy-title{
+font-size: 2rem
+  }
+  .FaultyOfBusiness-title{
+    font-size: 1.2rem;
+  }
+  .faculty-of-mass-communication-title{
+font-size: 1.1rem;
   }
   
-  body {
-    font-size: 1.3rem;
-    font-family: 'Oswald', sans-serif;
-    background: #f9f9f9;
+  .faculty-image img{
+    width: 50%;
+    
+  }
+  .FacultyMission-header{
+font-size: 1.4rem;
+  }
+  .facultyMission{
+grid-template-columns: 1fr;
+  }
+  .FacultyMission-info{
+font-size: 1.7rem;
   }
   
-  a {
-    color: #333;
-    text-decoration: none;
-  }
-  
-  .container {
-    max-width: 1100px;
-    margin: auto;
-    overflow: auto;
-    padding: 0 2rem;
-  }
-  
-  .main-header {
-    height: 55vh;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-  
-  .main-header h1 {
-    font-size: 4rem;
-    margin-bottom: 2rem;
-    line-height: 1.2;
-  }
-  
-  .main-header h1 span {
-    color: #b50d10;
-  }
-  
-  .main-header p {
-    font-size: 2rem;
-  }
-  
-  img {
-    width: 100%;
-  }
-  
-  .card {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2rem;
-    background: #f1f1f1;
-    margin-bottom: 2rem;
-  }
-  
-  .card h3 {
-    margin-bottom: 2rem;
-  }
-  
-  .card img {
-    height: 400px;
-  }
-  
-  .card > div {
-    padding: 2rem;
-  }
-  
-  .card:nth-child(even) img {
-    order: 2;
-  }
+}
+
+@media screen and (max-width:750px){
   
   
-  .btn {
-    display: inline-block;
-    background: #000;
-    color: #fff;
-    padding: 0.8rem 1.8rem;
-    margin-top: 2rem;
-    cursor: pointer;
-  }
-  
-  .btn:hover {
-    opacity: 0.8;
-  }
-  
-  @media(max-width:600px) {
-    .card {
-      display: block;
-    }
-  }
-  
+}
+
+@media screen and (max-width:450px){
+ 
+      
+}

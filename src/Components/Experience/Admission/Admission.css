@@ -5,6 +5,7 @@
   line-height: 1.4;
   color: #fff;
   margin: 0;
+  animation: 0.3s ease-in-out 0s  MoveFromRight;
 }
 .Admission::before {
     content: '';

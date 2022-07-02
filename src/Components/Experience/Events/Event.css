@@ -1,0 +1,20 @@
+.Event{
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://transcribeprint.co.uk/wp-content/uploads/2017/03/event.jpg') repeat fixed 100%;
+    background-size: cover;
+    overflow: hidden;
+    animation: 1s ease-in-out 0s  MoveFromRight;
+}
+.EventContainer{
+    background-color: white;
+    width: 80%;
+    text-align: center;
+    min-height: 50vh;
+    margin: 15rem auto;
+}
+.EventContainer h1{
+    font-size: 5rem;
+position: relative;
+bottom: -15rem;
+color: red;
+}
